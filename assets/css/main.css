@@ -458,6 +458,15 @@ ul.actions li:last-child {
 #footer .license li:first-child {
     border-left: 0;
 }
+.footerBlack {
+    color: black !important;
+}
+
+.backBtn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
 
 
 /* Wrapper */
