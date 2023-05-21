@@ -3,7 +3,7 @@ if(footer.classList.contains("mainFooter")){
     footer.innerHTML = `
         <ul class="license">
 
-            <li>Website under <a href="https://github.com/Alex22sv/SitioWeb/blob/main/LICENSE"><u>GPL-3.0 license</u></a></li>
+            <li>Sitio web bajo licencia <a href="https://github.com/Alex22sv/SitioWeb/blob/main/LICENSE"><u>GPL-3.0 license</u></a></li>
         </ul>
     `;
 } else {
@@ -21,7 +21,7 @@ if(footer.classList.contains("mainFooter")){
         <li><a href="https://www.reddit.com/user/Alex22_SV" class="fa-brands fa-reddit" target="_blank"></a></li>
     </ul>
     <ul class="license">
-        <li>Website under <a href="https://github.com/Alex22sv/SitioWeb/blob/main/LICENSE"><u>GPL-3.0 license</u></a></li>
+        <li>Sitio web bajo licencia <a href="https://github.com/Alex22sv/SitioWeb/blob/main/LICENSE"><u>GPL-3.0 license</u></a></li>
     </ul>
 </div>
 `;
