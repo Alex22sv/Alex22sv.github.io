@@ -12,6 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
@@ -48,17 +49,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="container">
 	<div class="row header text-center specials">
 		<div class="h_logo">
-			<a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a>
+			<a href="index.html"><img src="assets/images/logo.png" alt="" class="responsive"/></a>
 		</div>
 		<nav class="top-nav">
 			<ul class="top-nav nav_list">
-				<li><a href="portfolio.html">portfolio</a></li>
-				<li class="page-scroll"><a href="#about">About</a></li>
-				<li class="logo page-scroll"><a title="hexa" href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a></li>
-			    <li class="page-scroll"><a href="blog.html">blog</a></li>
-				<li class="page-scroll"><a href="#contact">get in touch</a></li>
+				<li><a href="portfolio.html">Portafolio</a></li>
+				<li class="page-scroll"><a href="#about">Acerca</a></li>
+				<li class="logo page-scroll"><a title="hexa" href="index.html"><img src="assets/images/logo.png" alt="" class="responsive"/></a></li>
+			    <li class="page-scroll"><a href="blog.html">Blog</a></li>
+				<li class="page-scroll"><a href="#contact">Contacto</a></li>
 			</ul>
-			<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+			<a href="#" id="pull"><img src="assets/images/nav-icon.png" title="menu" /></a>
 		</nav>
 		<div class="clearfix"></div>
 	</div>
@@ -72,14 +73,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				   <article style="position: absolute; width: 100%; opacity: 0;"> 
 				  	 	<div class="slider_img text-center">
 				   			<ul class="list-unstyled list_imgs">
-				   				<li><img src="images/slider.jpg" alt="" class="responsive"/></li>
+				   				<li><img src="assets/images/slider1.png" alt="" class="responsive"/></li>
 				   			</ul>
 			           	</div>
 				   </article>
 				   <article style="position: relative; width: 100%; opacity: 1;"> 
 				  	 	<div class="slider_img text-center">
 				   			<ul class="list-unstyled list_imgs">
-				   				<li><img src="images/slider1.jpg" alt="" class="responsive"/></li>
+				   				<li><img src="assets/images/slider2.jpeg" alt="" class="responsive"/></li>
 				   			</ul>
 			           	</div>
 				   </article>
@@ -101,7 +102,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="container">
 	<div class="row about">
 		<div class="col-md-3 about_img">
-			<img src="images/user.png" alt="" class="responsive"/>
+			<img src="assets/images/logo.JPG" alt="" class="responsive"/>
 		</div>
 		<div class="col-md-9 about_text">
 			<h3>Alexander M.</h3>
@@ -109,9 +110,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<p>Hola! Soy Alex22sv, más conocido como Alex. Actualmente estoy estudiando Ingeniería Informática. Tengo un poco de experiencia en desarrollo de bots de Discord (usando Discord.js), también plugins de Minecraft (no he hecho mucho pero tengo los conocimientos básicos) y desarrollo de páginas web (puedo crear páginas web front y back end, pero todavía me falta aprender a subirlas a un host). </p>
 			<div class="soc_icons navbar-right">
 				<ul class="list-unstyled text-center">
-					<li><a href="https://discord.com/invite/7VPhYTVh55"><i class="fa fa-discord"></i></a></li>
-					<li><a href="https://twitter.com/alex22_sv"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://www.reddit.com/user/Alex22_SV/"><i class="fa fa-reddit"></i></a></li>
+					<li><a href="https://discord.com/invite/7VPhYTVh55"><i class="fa-brands fa-discord"></i></a></li>
+					<li><a href="https://twitter.com/alex22_sv"><i class="fa-brands fa-twitter"></i></a></li>
+					<li><a href="https://github.com/Alex22sv"><i class="fa-brands fa-github"></i></a></li>
+					<li><a href="https://www.reddit.com/user/Alex22_SV/"><i class="fa-brands fa-reddit"></i></a></li>
 				</ul>	
 			</div>
 		</div>
@@ -119,29 +121,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 </div>
 <div class="footer_bg" id="contact"><!-- start footer -->
-<div class="container">
-	<div class="row footer">
-		<div class="col-md-8 contact_left">
-			<h3>Contacto</h3>
-			<p>Si quieres contactar conmigo puedes usar el siguiente formulario:</h4>
-			<form method="post" action="contact-post.html">
-				<input type="text" value="Nombre (Obligatorio)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
-				<input type="text" value="Email (Obligatorio)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Correo';}">
-				<input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
-				<textarea onfocus="if(this.value == 'Mensaje') this.value='';" onblur="if(this.value == '') this.value='Mensaje;'" >Mensaje</textarea>
-				<span class="pull-right"><input type="submit" value="Enviar"></span>
-			</form>
-		</div>
-		<div class="col-md-4  contact_right">
-			<p><span>Lorem Ipsum is simply dummy text: </span> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-			<ul class="list-unstyled address">
-				<li><i class="fa fa-map-marker"></i><span>500 Lorem Ipsum Dolor Sit,</span></li>
-				<li><i class="fa fa-phone"></i><span>(00) 222 666 444</span></li>
-				<li><i class="fa fa-envelope"></i><a href="mailto:info@mycompany.com">info(at)mycompany.com</a></li>
-			</ul>
-		</div>		
-	</div>
-</div>
 </div>
 <div class="footer1_bg"><!-- start footer1 -->
 	<div class="container">
@@ -171,5 +150,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---- start-smoth-scrolling---->		
 	</div>
 </div>
+	<!-- Scripts -->
+	<script src="./assets/js/contact.js"></script>
 </body>
 </html>
