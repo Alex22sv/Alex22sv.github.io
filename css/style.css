@@ -590,6 +590,7 @@ h2.style{
 }
 .ads_nav li a img{
 	width: 100%;
+	border: 2px solid #19054b;
 }
 .ads_nav li a:hover{
 	zoom: 1;
