@@ -1,0 +1,22 @@
+# Environment
+.env
+
+# pnpm
+.pnpm-store/
+
+# Node
+**/node_modules/
+**/.next/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Turbopack
+**/.turbo/

@@ -1,0 +1,19 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: docker/node/Dockerfile
+
+    container_name: my-space-web
+
+    working_dir: /workspace
+
+    volumes:
+      - ./:/workspace
+
+    ports:
+      - "3000:3000"
+
+    stdin_open: true
+
+    tty: true
