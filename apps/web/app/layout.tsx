@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import "./globals.css";
 import { Background } from "@/components/layout/Background";
+import { GridBackground } from "@/components/layout/GridBackground";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${sora.variable} antialiased`}>
         <Background />
+        <GridBackground />
         <Navbar />
         {children}
         <Footer />

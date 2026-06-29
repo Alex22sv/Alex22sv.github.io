@@ -21,13 +21,32 @@ export function Hero() {
           className="max-w-4xl"
         >
           <Badge>
-            📚 Personal Digital Library
+            Welcome to my library
           </Badge>
 
-          <h1 className="mt-8 font-[family-name:var(--font-sora)] text-6xl font-bold leading-tight lg:text-7xl">
-            {personal.tagline}
-          </h1>
+          <h1
+            className="
+              mt-8
+              font-[family-name:var(--font-sora)]
+              text-5xl
+              font-bold
+              leading-tight
+              tracking-tight
+              md:text-7xl">
 
+            <span className="block">
+            Building software,
+            </span>
+
+            <span className="block text-primary">
+            sharing knowledge,
+            </span>
+
+            <span className="block">
+            and learning every day.
+            </span>
+
+            </h1>
           <p className="mt-8 max-w-2xl text-xl leading-9 text-muted-foreground">
             {personal.description}
           </p>

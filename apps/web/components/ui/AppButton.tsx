@@ -5,6 +5,7 @@ export function AppButton(props: React.ComponentProps<typeof Button>) {
     <Button
       {...props}
       className="rounded-full px-6"
+      style={{ marginBottom: '1rem' }}
     />
   );
 }

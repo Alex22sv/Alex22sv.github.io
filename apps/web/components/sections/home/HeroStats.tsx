@@ -19,7 +19,18 @@ export function HeroStats() {
   ];
 
   return (
-    <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4">
+    <div className="
+        rounded-3xl
+        border
+        border-border
+        bg-background/30
+        p-6
+        backdrop-blur-md
+        transition
+        hover:border-primary/40
+        hover:translate-y-[-4px]
+    "
+    style={{ marginBottom: '2rem' }}>
       {stats.map((stat) => (
         <div
           key={stat.label}
