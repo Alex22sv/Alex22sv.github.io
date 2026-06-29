@@ -4,7 +4,7 @@ import path from "path";
 import { parseContent } from "./parser";
 import type { Collection, ContentItem } from "./types";
 
-const CONTENT_PATH = path.join(process.cwd(), "./content");
+const CONTENT_PATH = path.join(process.cwd(), "../../content");
 
 export function getCollection(collection: Collection): ContentItem[] {
   const directory = path.join(CONTENT_PATH, collection);
