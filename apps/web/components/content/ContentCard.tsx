@@ -46,7 +46,16 @@ export function ContentCard({
                 {post.description}
 
             </p>
-
+            <div className="mt-5 flex flex-wrap gap-2">
+                {post.tags.map((tag) => (
+                    <span
+                    key={tag}
+                    className="rounded-full bg-primary/10 px-2 py-1 text-xs text-primary"
+                    >
+                    #{tag}
+                    </span>
+                ))}
+            </div>
         </Link>
 
     );
