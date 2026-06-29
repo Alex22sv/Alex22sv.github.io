@@ -2,16 +2,12 @@ import { Tag } from "@/components/content/Tag";
 
 type Props = {
     children: React.ReactNode;
-
     title: string;
-
     description: string;
-
     date: string;
-
     readingTime: string;
-
     tags: string[];
+    toc?: React.ReactNode;
 };
 
 export function ArticleLayout({
@@ -21,6 +17,7 @@ export function ArticleLayout({
     date,
     readingTime,
     tags,
+    toc,
 }: Props) {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
@@ -42,9 +39,15 @@ export function ArticleLayout({
                 ))}
             </div>
 
-            <article className="prose prose-invert mt-16 max-w-none">
-                {children}
-            </article>
+            <div className="grid gap-12 lg:grid-cols-[1fr_280px]">
+                <article>
+                    {children}
+                </article>
+
+                <aside className="hidden lg:block">
+                    {toc}
+                </aside>
+            </div>
         </main>
     );
 }
