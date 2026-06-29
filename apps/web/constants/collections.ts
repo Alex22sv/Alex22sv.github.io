@@ -3,6 +3,7 @@ import {
   FolderGit2,
   FlaskConical,
   Image,
+  BookMarked,
 } from "lucide-react";
 
 export const collections = [
@@ -30,4 +31,10 @@ export const collections = [
     icon: Image,
     description: "Photography and visual work.",
   },
+  {
+    name: "Reading",
+    slug: "reading",
+    icon: BookMarked,
+    description: "Books, papers and notes."
+  }
 ];

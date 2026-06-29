@@ -11,7 +11,7 @@ export const siteConfig = {
 
   locale: "en",
 
-  github: "",
+  github: "https://github.com/Alex22sv",
 
   linkedin: "",
 
@@ -19,7 +19,7 @@ export const siteConfig = {
 
   navigation: [
     {
-      title: "Library",
+      title: "Home",
       href: "/",
     },
     {
@@ -38,5 +38,9 @@ export const siteConfig = {
       title: "About",
       href: "/about",
     },
+    {
+      title: "Library",
+      href: "/library",
+    }
   ],
 };

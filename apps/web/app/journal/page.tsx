@@ -3,6 +3,7 @@ import { getCollection } from "@/lib/content/loader";
 import { sortByDate } from "@/lib/content/sort";
 
 import { ContentCard } from "@/components/content/ContentCard";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 export default function JournalPage() {
 
@@ -15,9 +16,10 @@ export default function JournalPage() {
 
     <main className="mx-auto max-w-5xl px-6 py-20">
 
-      <h1 className="text-5xl font-bold">
-        Journal
-      </h1>
+      <PageHeader
+        title="Journal"
+        description="Articles, tutorials and reflections about software, technology and learning."
+      />
 
       <div className="mt-10 space-y-6">
 
