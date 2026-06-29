@@ -1,4 +1,5 @@
 import type { MDXComponents } from "mdx/types";
+import { Callout } from "./Callout";
 
 export function useMDXComponents(): MDXComponents {
   return {
@@ -22,5 +23,7 @@ export function useMDXComponents(): MDXComponents {
         {...props}
       />
     ),
+    
+    Callout,
   };
 }

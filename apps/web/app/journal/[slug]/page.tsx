@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 
 import { getContent } from "@/lib/content/loader";
 import { ArticleLayout } from "@/components/layout/ArticleLayout";
+import { MDX } from "@/components/mdx/MDX";
 
 type Props = {
     params: Promise<{
@@ -28,9 +29,7 @@ export default async function JournalPost({
             readingTime={post.readingTime ?? ""}
             tags={post.tags}
         >
-            <pre className="whitespace-pre-wrap font-sans">
-                {post.body}
-            </pre>
+            <MDX source={post.body ?? ""} />
         </ArticleLayout>
     );
 }
