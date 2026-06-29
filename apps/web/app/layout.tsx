@@ -3,6 +3,7 @@ import { Inter, Sora } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import "./globals.css";
+import { Background } from "@/components/layout/Background";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${sora.variable} antialiased`}>
+        <Background />
         <Navbar />
         {children}
         <Footer />
