@@ -4,7 +4,7 @@ type Props = {
   source: string;
 };
 
-export async function MDX({
+export async function MDXRenderer({
   source,
 }: Props) {
   const content = await renderMDX(source);

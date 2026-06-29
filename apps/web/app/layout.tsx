@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import "./globals.css";
 import { Background } from "@/components/layout/Background";
 import { GridBackground } from "@/components/layout/GridBackground";
+import type { Metadata } from "next";
+import { siteConfig } from "@/config/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,11 +18,9 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Alex22sv",
-    template: "%s | Alex22sv",
-  },
-  description: "Personal website, portfolio, blog and digital space.",
+  title: siteConfig.title,
+  description: siteConfig.description,
+  metadataBase: new URL(siteConfig.url),
 };
 
 export default function RootLayout({

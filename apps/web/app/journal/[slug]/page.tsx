@@ -1,16 +1,29 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { ArticlePage } from "@/components/content/ArticlePage";
 import { getContent } from "@/lib/content/loader";
-import { ArticleLayout } from "@/components/layout/ArticleLayout";
-import { MDX } from "@/components/mdx/MDX";
-import { extractToc } from "@/lib/content/toc";
-import { TableOfContents } from "@/components/content/TableOfContents";
+import { createArticleMetadata } from "@/lib/content/metadata";
 
 type Props = {
     params: Promise<{
         slug: string;
     }>;
 };
+
+export async function generateMetadata({
+    params,
+}: Props): Promise<Metadata> {
+    const { slug } = await params;
+
+    const post = getContent("journal", slug);
+
+    if (!post) {
+        return {};
+    }
+
+    return createArticleMetadata(post);
+}
 
 export default async function JournalPost({
     params,
@@ -22,17 +35,6 @@ export default async function JournalPost({
     if (!post) {
         notFound();
     }
-    const toc = extractToc(post.body ?? "");
-    return (
-        <ArticleLayout
-            title={post.title}
-            description={post.description}
-            date={post.date}
-            readingTime={post.readingTime ?? ""}
-            tags={post.tags}
-            toc={<TableOfContents items={toc} />}
-        >
-            <MDX source={post.body ?? ""} />
-        </ArticleLayout>
-    );
+
+    return <ArticlePage post={post} />;
 }
