@@ -1,29 +1,24 @@
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
 
-export function getJournalPosts() {
-  const directory = path.join(process.cwd(), "./content/journal/");
+import { parseContent } from "./parser";
+
+export function getCollection(collection: string) {
+  const directory = path.join(
+    process.cwd(),
+    "./content",
+    collection
+  );
 
   const files = fs.readdirSync(directory);
 
-  return files.map((file) => {
-    const source = fs.readFileSync(
-      path.join(directory, file),
-      "utf8"
-    );
+  return files.map((file) => ({
+    slug: file.replace(/\.mdx$/, ""),
 
-    const { data } = matter(source);
+    collection,
 
-    return {
-        slug: file.replace(".mdx", ""),
-        title: data.title,
-        description: data.description,
-        date: data.date,
-        category: "journal",
-        tags: data.tags || [],
-        published: data.published || false,
-        cover: data.cover || null,
-    };
-  });
+    ...parseContent(
+      path.join(directory, file)
+    ),
+  }));
 }

@@ -1,0 +1,26 @@
+import fs from "fs";
+import matter from "gray-matter";
+import readingTime from "reading-time";
+
+export function parseContent(filepath: string) {
+  const source = fs.readFileSync(filepath, "utf8");
+
+  const { data, content } = matter(source);
+
+  return {
+    title: data.title,
+    description: data.description,
+
+    date: data.date,
+
+    tags: data.tags || [],
+
+    published: data.published || false,
+
+    cover: data.cover || null,
+
+    body: content,
+
+    readingTime: readingTime(content).text,
+  };
+}

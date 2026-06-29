@@ -1,23 +1,29 @@
-export type ContentType =
+export type Collection =
   | "journal"
-  | "project"
+  | "projects"
   | "lab"
   | "gallery";
 
-export interface ContentItem {
-  slug: string;
-
+export interface Frontmatter {
   title: string;
 
   description: string;
 
   date: string;
 
-  category: ContentType;
-
   tags: string[];
 
   published: boolean;
 
   cover?: string;
+}
+
+export interface ContentItem extends Frontmatter {
+  slug: string;
+
+  collection: Collection;
+
+  readingTime?: string;
+
+  body?: string;
 }
