@@ -41,6 +41,10 @@ export const siteConfig = {
     {
       title: "Library",
       href: "/library",
+    },
+    {
+      title: "Tags",
+      href: "/tags",
     }
   ],
 };

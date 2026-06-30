@@ -1,11 +1,30 @@
+import Link from "next/link";
+
 type Props = {
-  label: string;
+  tag: string;
 };
 
-export function Tag({ label }: Props) {
+export function Tag({ tag }: Props) {
   return (
-    <span className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs text-primary">
-      #{label}
-    </span>
+    <Link
+      href={`/tags/${tag}`}
+      className="
+        inline-flex
+        items-center
+        rounded-full
+        border
+        border-primary/20
+        bg-primary/10
+        px-3
+        py-1
+        text-xs
+        font-medium
+        text-primary
+        transition-colors
+        hover:bg-primary/20
+      "
+    >
+      #{tag}
+    </Link>
   );
 }

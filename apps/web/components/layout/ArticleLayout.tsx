@@ -35,7 +35,7 @@ export function ArticleLayout({
 
             <div className="mt-8 flex flex-wrap gap-2">
                 {tags.map((tag) => (
-                    <Tag key={tag} label={tag} />
+                    <Tag key={tag} tag={tag} />
                 ))}
             </div>
 
