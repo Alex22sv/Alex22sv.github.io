@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { ContentItem } from "@/lib/content/types";
 import { Tag } from "./Tag";
+import { Badge } from "../ui/Badge";
 
 export function ContentCard({
     post,
@@ -10,14 +11,18 @@ export function ContentCard({
 }) {
 
     return (
-
+        // I want to check what information is given:
         <article className="rounded-2xl border p-6 transition-all hover:border-primary/40 hover:shadow-lg">
 
             <p className="text-xs uppercase tracking-wider text-muted-foreground">
-                {post.collection}
+                {post.collection === "projects" && (
+                    <Badge>
+                        {post.status}
+                    </Badge>
+                )}
             </p>
 
-            <Link href={`/journal/${post.slug}`}>
+            <Link href={`/${post.collection}/${post.slug}`}>
                 <h2 className="mt-2 text-2xl font-bold hover:text-primary transition-colors">
                     {post.title}
                 </h2>

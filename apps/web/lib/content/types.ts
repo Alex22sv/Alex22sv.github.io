@@ -3,7 +3,7 @@ export type Collection =
   | "projects"
   | "lab"
   | "gallery";
-  
+
 export interface Frontmatter {
   title: string;
 
@@ -22,12 +22,11 @@ export interface Frontmatter {
 
 export interface ContentItem extends Frontmatter {
   slug: string;
-
   collection: Collection;
-
   body?: string;
-
   readingTime?: string;
-
+  status?: string;
+  repository?: string;
+  website?: string;
   featured?: boolean;
 }

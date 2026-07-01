@@ -17,6 +17,14 @@ export function parseContent(filepath: string) {
 
     published: data.published || false,
 
+    status: data.status || null,
+
+    repository: data.repository || null,
+
+    website: data.website || null,
+
+    featured: data.featured || false,
+
     cover: data.cover || null,
 
     body: content,

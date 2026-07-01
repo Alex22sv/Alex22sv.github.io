@@ -13,11 +13,12 @@ export function getCollection(collection: Collection): ContentItem[] {
     .readdirSync(directory)
     .filter((file) => file.endsWith(".mdx"));
 
-  return files.map((file) => ({
+  const contentItems = files.map((file) => ({
     slug: file.replace(".mdx", ""),
     collection,
     ...parseContent(path.join(directory, file)),
   })) as ContentItem[];
+  return contentItems;
 }
 
 export function getContent(

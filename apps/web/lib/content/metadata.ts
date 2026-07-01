@@ -21,7 +21,7 @@ export function createArticleMetadata(
             description: post.description,
 
             url:
-                `${siteConfig.url}/journal/${post.slug}`,
+                `${siteConfig.url}/${post.collection}/${post.slug}`,
 
             siteName:
                 siteConfig.title,
