@@ -6,33 +6,56 @@ import type { Collection, ContentItem } from "./types";
 
 const CONTENT_PATH = path.join(process.cwd(), "../../content");
 
-export function getCollection(collection: Collection): ContentItem[] {
-  const directory = path.join(CONTENT_PATH, collection);
+export function getCollection(
+  collection: Collection
+): ContentItem[] {
 
-  const files = fs
-    .readdirSync(directory)
-    .filter((file) => file.endsWith(".mdx"));
+  const collectionPath = path.join(
+    CONTENT_PATH,
+    collection
+  );
 
-  const contentItems = files.map((file) => ({
-    slug: file.replace(".mdx", ""),
-    collection,
-    ...parseContent(path.join(directory, file)),
-})).filter(item => !item.draft).sort((a, b) => {
-    const dateA = new Date(a.date).getTime();
-    const dateB = new Date(b.date).getTime();
-    return dateB - dateA;
-  });
-  return contentItems;
+  const entries = fs
+    .readdirSync(collectionPath)
+    .filter((entry) => {
+      const fullPath = path.join(collectionPath, entry);
+
+      return fs.statSync(fullPath).isDirectory();
+    });
+
+  return entries
+    .map((entry) => {
+
+      const filepath = path.join(
+        collectionPath,
+        entry,
+        "index.mdx"
+      );
+
+      if (!fs.existsSync(filepath)) {
+        return null;
+      }
+
+      return {
+        slug: entry,
+        collection,
+        ...parseContent(filepath),
+      } as ContentItem;
+
+    })
+    .filter(Boolean) as ContentItem[];
 }
 
 export function getContent(
   collection: Collection,
   slug: string
 ): ContentItem | null {
+
   const filepath = path.join(
     CONTENT_PATH,
     collection,
-    `${slug}.mdx`
+    slug,
+    "index.mdx"
   );
 
   if (!fs.existsSync(filepath)) {
