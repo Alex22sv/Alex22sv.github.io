@@ -4,8 +4,8 @@ import { extractToc } from "@/lib/content/toc";
 import { TableOfContents } from "./TableOfContents";
 import { ArticleLayout } from "../layout/ArticleLayout";
 import { MDXRenderer } from "../mdx/MDXRenderer";
-import { getAdjacentPosts } from "@/lib/content/navigation";
-import { getRelatedPosts } from "@/lib/content/related";
+import { getAdjacentContent } from "@/lib/content/navigation";
+import { getRelatedContent } from "@/lib/content/related";
 import { PreviousNext } from "./PreviousNext";
 import { RelatedArticles } from "./RelatedArticles";
 
@@ -18,8 +18,8 @@ export function ArticlePage({
 }: Props) {
 
     const toc = extractToc(post.body ?? "");
-    const navigation = getAdjacentPosts(post.slug);
-    const related = getRelatedPosts(post);
+    const navigation = getAdjacentContent(post.collection, post.slug);
+    const related = getRelatedContent(post.collection, post);
 
     return (
         <ArticleLayout

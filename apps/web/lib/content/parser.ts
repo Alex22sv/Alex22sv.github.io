@@ -12,18 +12,21 @@ export function parseContent(filepath: string) {
     description: data.description,
     date: data.date,
     tags: data.tags || [],
-    published: data.published || false,
+    tech: data.tech || [],
+    published: data.published ?? true,
+    featured: data.featured ?? false,
+    draft: data.draft ?? false,
     status: data.status || null,
     repository: data.repository || null,
     website: data.website || null,
-    featured: data.featured || false,
     cover: data.cover || null,
     updated: data.updated || null,
     author: data.author || null,
-    draft: data.draft || false,
     series: data.series || null,
     order: data.order || null,
     body: content,
-    readingTime: readingTime(content).text,
+    readingTime:
+      data.readingTime ||
+      readingTime(content).text,
   };
 }

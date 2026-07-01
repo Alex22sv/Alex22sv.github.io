@@ -1,22 +1,28 @@
 import { getCollection } from "./loader";
-import { ContentItem } from "./types";
+import { Collection, ContentItem } from "./types";
 
-export type AdjacentPosts = {
+export type AdjacentContent = {
   previous?: ContentItem;
   next?: ContentItem;
 };
 
-export function getAdjacentPosts(slug: string): AdjacentPosts {
-  const posts = getCollection("journal");
-
-  const index = posts.findIndex((post) => post.slug === slug);
-
-  if (index === -1) {
-    return {};
-  }
-
+export function getAdjacentContent(
+  collection: Collection,
+  slug: string,
+): AdjacentContent {
+  const items = getCollection(collection);
+  const index = items.findIndex(
+      item => item.slug === slug
+    );
+  if (index === -1) return {};
   return {
-    previous: index > 0 ? posts[index - 1] : undefined,
-    next: index < posts.length - 1 ? posts[index + 1] : undefined,
+    previous:
+      index > 0
+        ? items[index - 1]
+        : undefined,
+    next:
+      index < items.length - 1
+        ? items[index + 1]
+        : undefined,
   };
 }

@@ -13,7 +13,7 @@ type Props = {
     toc?: React.ReactNode;
 };
 
-export function ArticleLayout({
+export function ProjectLayout({
     children,
     title,
     description,
@@ -86,5 +86,6 @@ export function ArticleLayout({
                 )}
             </div>
         </main>
+        
     );
 }

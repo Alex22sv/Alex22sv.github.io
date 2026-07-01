@@ -16,7 +16,7 @@ export function PreviousNext({
 
       {previous ? (
         <Link
-          href={`/journal/${previous.slug}`}
+          href={`/${previous.collection}/${previous.slug}`}
           className="rounded-xl border p-6 transition hover:border-primary"
         >
           <p className="text-sm text-muted-foreground">
@@ -33,7 +33,7 @@ export function PreviousNext({
 
       {next ? (
         <Link
-          href={`/journal/${next.slug}`}
+          href={`/${next.collection}/${next.slug}`}
           className="rounded-xl border p-6 text-right transition hover:border-primary"
         >
           <p className="text-sm text-muted-foreground">

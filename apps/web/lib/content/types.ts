@@ -6,17 +6,11 @@ export type Collection =
 
 export interface Frontmatter {
   title: string;
-
   description: string;
-
   date: string;
-
   tags: string[];
-
   published: boolean;
-
   featured?: boolean;
-
   cover?: string;
 }
 
@@ -39,4 +33,5 @@ export interface ContentItem extends Frontmatter {
   status?: string;
   repository?: string;
   website?: string;
+  tech?: string[];
 }

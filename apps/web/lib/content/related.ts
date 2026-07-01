@@ -1,37 +1,29 @@
 import { getCollection } from "./loader";
-import { ContentItem } from "./types";
+import { Collection, ContentItem } from "./types";
 
-export function getRelatedPosts(
+export function getRelatedContent(
+  collection: Collection,
   current: ContentItem,
   limit = 3,
 ): ContentItem[] {
 
-  return getCollection("journal")
-
-    .filter((post) => {
-
-      if (post.slug === current.slug) {
-        return false;
-      }
-
-      return post.tags.some((tag) =>
-        current.tags.includes(tag),
+  return getCollection(collection)
+    .filter(item => {
+      if (item.slug === current.slug) return false;
+      return item.tags.some(tag =>
+        current.tags.includes(tag)
       );
-
     })
-
     .sort((a, b) => {
-
       const scoreA =
-        a.tags.filter(tag => current.tags.includes(tag)).length;
-
+        a.tags.filter(tag =>
+          current.tags.includes(tag)
+        ).length;
       const scoreB =
-        b.tags.filter(tag => current.tags.includes(tag)).length;
-
+        b.tags.filter(tag =>
+          current.tags.includes(tag)
+        ).length;
       return scoreB - scoreA;
-
     })
-
     .slice(0, limit);
-
 }
