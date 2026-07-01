@@ -6,6 +6,9 @@ type Props = {
     description: string;
     date: string;
     readingTime: string;
+    updated?: string;
+    author?: string;
+    cover?: string;
     tags: string[];
     toc?: React.ReactNode;
 };
@@ -16,15 +19,47 @@ export function ArticleLayout({
     description,
     date,
     readingTime,
+    updated,
+    author,
+    cover,
     tags,
     toc,
 }: Props) {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
-            <p className="text-sm text-primary">
-                {date} • {readingTime}
-            </p>
+            <div className="mt-4 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
 
+                <span>{date}</span>
+
+                {updated && (
+                    <>
+                        <span>•</span>
+                        <span>Updated {updated}</span>
+                    </>
+                )}
+
+                {readingTime && (
+                    <>
+                        <span>•</span>
+                        <span>{readingTime}</span>
+                    </>
+                )}
+
+                {author && (
+                    <>
+                        <span>•</span>
+                        <span>{author}</span>
+                    </>
+                )}
+
+            </div>
+            {cover && (
+                <img
+                    src={cover}
+                    alt={title}
+                    className="mb-10 w-full rounded-2xl border object-cover"
+                />
+            )}
             <h1 className="mt-6 text-5xl font-bold">
                 {title}
             </h1>

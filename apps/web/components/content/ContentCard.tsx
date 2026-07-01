@@ -11,7 +11,6 @@ export function ContentCard({
 }) {
 
     return (
-        // I want to check what information is given:
         <article className="rounded-2xl border p-6 transition-all hover:border-primary/40 hover:shadow-lg">
 
             <p className="text-xs uppercase tracking-wider text-muted-foreground">

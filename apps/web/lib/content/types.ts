@@ -21,12 +21,22 @@ export interface Frontmatter {
 }
 
 export interface ContentItem extends Frontmatter {
-  slug: string;
   collection: Collection;
-  body?: string;
+  slug: string;
+  title: string;
+  description: string;
+  body: string;
+  date: string;
+  updated?: string;
+  author?: string;
   readingTime?: string;
+  tags: string[];
+  cover?: string;
+  featured?: boolean;
+  draft?: boolean;
+  series?: string;
+  order?: number;
   status?: string;
   repository?: string;
   website?: string;
-  featured?: boolean;
 }

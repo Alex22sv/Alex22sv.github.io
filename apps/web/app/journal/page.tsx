@@ -7,10 +7,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 
 export default function JournalPage() {
 
-  const posts =
-    sortByDate(
-      getCollection("journal")
-    );
+  const posts = getCollection("journal");
 
   return (
 
