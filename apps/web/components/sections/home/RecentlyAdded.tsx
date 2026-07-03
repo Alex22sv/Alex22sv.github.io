@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 import { ContentCard } from "@/components/common/ContentCard";
+import { ProjectCard } from "@/components/projects/ProjectCard";
 
 export function RecentlyAdded() {
 
@@ -32,16 +33,19 @@ export function RecentlyAdded() {
 
                 />
 
-                <ContentCard
-
-                    title="First Project"
-
-                    description="Coming soon."
-
-                    href="#"
-
-                    category="Project"
-
+                <ProjectCard
+                    project={{
+                        title: "My first project",
+                        description: "Coming soon.",
+                        slug: "my-first-project",
+                        status: "In Progress",
+                        tech: ["React", "TypeScript"],
+                        collection: "projects",
+                        body: "",
+                        date: new Date().toISOString(),
+                        tags: [],
+                        published: true,
+                    }}
                 />
 
             </div>

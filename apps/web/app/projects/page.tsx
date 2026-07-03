@@ -1,33 +1,29 @@
 import { getCollection } from "@/lib/content/loader";
 
-import { sortByDate } from "@/lib/content/sort";
-
-import { ContentCard } from "@/components/content/ContentCard";
-import { PageHeader } from "@/components/layout/PageHeader";
+import { ProjectList } from "@/components/projects/ProjectList";
 
 export default function ProjectsPage() {
 
-    const projects = getCollection("projects");
+    const projects =
+        getCollection("projects");
 
     return (
 
         <main className="mx-auto max-w-5xl px-6 py-20">
 
-            <PageHeader
-                title="Projects"
-                description="A collection of my personal and professional projects."
-            />
+            <h1 className="text-5xl font-bold">
+                Projects
+            </h1>
 
-            <div className="mt-10 space-y-6">
+            <p className="mt-4 max-w-2xl text-muted-foreground">
+                A collection of software, experiments and long-term projects that I am building and documenting.
+            </p>
 
-                {projects.map(project =>
+            <div className="mt-12">
 
-                    <ContentCard
-                        key={project.slug}
-                        post={project}
-                    />
-
-                )}
+                <ProjectList
+                    projects={projects}
+                />
 
             </div>
 

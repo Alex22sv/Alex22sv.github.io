@@ -45,10 +45,10 @@ export function ProjectPage({
             }
         >
             <Link
-                href="/journal"
+                href="/projects"
                 className="mb-10 inline-flex text-sm text-primary hover:underline"
             >
-                ← Back to Journal
+                ← Back to Projects
             </Link>
 
             <ProjectLinks
