@@ -4,8 +4,7 @@ Personal website built with **Next.js**, designed as the central hub of my digit
 
 This project is more than a portfolio. It is intended to become a complete personal platform including:
 
-- 📝 Blog
-- 💼 Portfolio
+- 📝 Journal
 - 📸 Gallery
 - 👤 About Me
 - 📚 Projects
@@ -56,20 +55,6 @@ pnpm dev
 The application will be available at:
 
 http://localhost:3000
-
----
-
-## Project Structure
-
-```text
-apps/
-└── web/
-
-content/
-docker/
-docs/
-public/
-```
 
 ---
 
