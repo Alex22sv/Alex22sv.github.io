@@ -21,10 +21,6 @@ export default function AboutPage() {
 
       <AboutTimeline />
 
-      <AboutWebsite />
-
-      <AboutNow />
-
       <AboutContact />
 
     </main>

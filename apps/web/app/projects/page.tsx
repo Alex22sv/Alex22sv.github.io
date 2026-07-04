@@ -4,8 +4,13 @@ import { ProjectList } from "@/components/sections/projects/ProjectList";
 
 export default function ProjectsPage() {
 
-    const projects =
-        getCollection("projects");
+    // Fetch all projects from the content directory
+    // Order by the "date" field in descending order
+    const projects = getCollection("projects").sort((a, b) => {
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+        return dateB.getTime() - dateA.getTime();
+    });
 
     return (
 

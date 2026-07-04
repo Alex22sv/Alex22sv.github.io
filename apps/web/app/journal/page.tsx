@@ -1,13 +1,14 @@
 import { getCollection } from "@/lib/content/loader";
-
-import { sortByDate } from "@/lib/content/sort";
-
 import { ContentCard } from "@/components/content/ContentCard";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export default function JournalPage() {
 
-  const posts = getCollection("journal");
+  const posts = getCollection("journal").sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB.getTime() - dateA.getTime();
+  });
 
   return (
 
