@@ -15,22 +15,6 @@ export const siteConfig = {
       href: "/",
     },
     {
-      title: "Journal",
-      href: "/journal",
-    },
-    {
-      title: "Projects",
-      href: "/projects",
-    },
-    {
-      title: "Gallery",
-      href: "/gallery",
-    },
-    {
-      title: "About",
-      href: "/about",
-    },
-    {
       title: "Library",
       href: "/library",
     },

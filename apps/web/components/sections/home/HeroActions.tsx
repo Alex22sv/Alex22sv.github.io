@@ -15,7 +15,7 @@ export function HeroActions() {
         variant="outline"
         asChild
       >
-        <Link href="/blog">
+        <Link href="/journal">
           Read Journal
         </Link>
       </AppButton>

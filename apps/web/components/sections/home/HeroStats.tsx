@@ -1,25 +1,42 @@
-export function HeroStats() {
+interface HeroStatsProps {
+  projects: number;
+  articles: number;
+  technologies: number;
+  experiments: number;
+}
+
+export function HeroStats({
+  projects,
+  articles,
+  technologies,
+  experiments,
+}: HeroStatsProps) {
   const stats = [
     {
       label: "Projects",
-      value: 0,
+      value: projects,
     },
     {
       label: "Articles",
-      value: 0,
+      value: articles,
     },
     {
       label: "Technologies",
-      value: 12,
+      value: technologies,
     },
     {
       label: "Experiments",
-      value: 3,
+      value: experiments,
     },
   ];
 
   return (
-    <div className="
+    <div
+      className="
+        grid
+        gap-4
+        sm:grid-cols-2
+        lg:grid-cols-4
         rounded-3xl
         border
         border-border
@@ -28,9 +45,9 @@ export function HeroStats() {
         backdrop-blur-md
         transition
         hover:border-primary/40
-        hover:translate-y-[-4px]
-    "
-    style={{ marginBottom: '2rem' }}>
+      "
+      style={{ marginBottom: "2rem" }}
+    >
       {stats.map((stat) => (
         <div
           key={stat.label}

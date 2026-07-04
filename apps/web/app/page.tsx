@@ -1,13 +1,13 @@
 import { Hero } from "@/components/sections/home/Hero";
 import { Collections } from "@/components/sections/home/Collections";
 import { RecentlyAdded } from "@/components/sections/home/RecentlyAdded";
-import { CurrentFocus } from "@/components/home/current-focus";
-import { WhatYouWillFind } from "@/components/home/what-youll-find";
+import { getSiteStats } from "@/lib/content/stats";
 
 export default function HomePage() {
+  const stats = getSiteStats();
   return (
     <>
-      <Hero />
+      <Hero stats={stats} />
       <Collections />
       <RecentlyAdded />
     </>
