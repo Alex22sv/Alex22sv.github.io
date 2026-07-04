@@ -12,6 +12,7 @@ export interface Frontmatter {
   published: boolean;
   featured?: boolean;
   cover?: string;
+  gallery?: string[];
 }
 
 export interface ContentItem extends Frontmatter {

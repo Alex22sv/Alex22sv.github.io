@@ -25,6 +25,7 @@ export function parseContent(filepath: string) {
     series: data.series || null,
     order: data.order || null,
     body: content,
+    gallery: data.gallery || [],
     readingTime:
       data.readingTime ||
       readingTime(content).text,

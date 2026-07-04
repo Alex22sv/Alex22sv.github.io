@@ -14,6 +14,7 @@ import { extractToc } from "@/lib/content/toc";
 import { ProjectHero } from "./ProjectHero";
 import { ProjectInfo } from "./ProjectInfo";
 import { ProjectLinks } from "./ProjectLinks";
+import { Gallery } from "../gallery/Gallery";
 
 type Props = {
     project: ContentItem;
@@ -63,6 +64,10 @@ export function ProjectPage({
 
             <MDXRenderer
                 source={project.body}
+            />
+
+            <Gallery
+                images={project.gallery ?? []}
             />
 
             <PreviousNext
