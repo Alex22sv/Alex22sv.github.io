@@ -19,22 +19,22 @@ export const collections = [
     icon: FolderGit2,
     description: "Finished and ongoing projects.",
   },
-  {
+/*   {
     name: "Lab",
     slug: "lab",
     icon: FlaskConical,
     description: "Experiments and prototypes.",
-  },
+  }, */
   {
     name: "Gallery",
     slug: "gallery",
     icon: Image,
     description: "Photography and visual work.",
   },
-  {
+/*   {
     name: "Reading",
     slug: "reading",
     icon: BookMarked,
     description: "Books, papers and notes."
-  }
+  } */
 ];

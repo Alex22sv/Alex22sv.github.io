@@ -2,7 +2,8 @@ export type Collection =
   | "journal"
   | "projects"
   | "lab"
-  | "gallery";
+  | "gallery"
+  | "library";
 
 export interface Frontmatter {
   title: string;

@@ -1,57 +1,28 @@
 import { Container } from "@/components/ui/Container";
-
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
-import { ContentCard } from "@/components/common/ContentCard";
-import { ProjectCard } from "@/components/projects/ProjectCard";
+import { ContentGrid } from "@/components/content/ContentGrid";
 
-export function RecentlyAdded() {
+import type { ContentItem } from "@/lib/content/types";
 
-    return (
+interface Props {
+  items: ContentItem[];
+}
 
-        <Container>
+export function RecentlyAdded({
+  items,
+}: Props) {
+  return (
+    <Container>
+      <div style={{ marginTop: "3rem" }}>
+        <SectionHeading
+          title="Recently Added"
+          description="The latest additions to my digital library."
+        />
 
-            <SectionHeading
+        <ContentGrid items={items} />
+      </div>
 
-                title="Recently Added"
-
-                description="The latest additions to my digital library."
-
-            />
-
-            <div className="grid gap-8 md:grid-cols-2" style={{ marginBottom: '2rem' }}>
-
-                <ContentCard
-
-                    title="My first article"
-
-                    description="Coming soon."
-
-                    href="#"
-
-                    category="Journal"
-
-                />
-
-                <ProjectCard
-                    project={{
-                        title: "My first project",
-                        description: "Coming soon.",
-                        slug: "my-first-project",
-                        status: "In Progress",
-                        tech: ["React", "TypeScript"],
-                        collection: "projects",
-                        body: "",
-                        date: new Date().toISOString(),
-                        tags: [],
-                        published: true,
-                    }}
-                />
-
-            </div>
-
-        </Container>
-
-    );
-
+    </Container>
+  );
 }
