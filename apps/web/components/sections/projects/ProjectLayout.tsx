@@ -34,7 +34,7 @@ export function ProjectLayout({
                 {updated && (
                     <>
                         <span>•</span>
-                        <span>Updated {updated}</span>
+                        <span>Actualizado {updated}</span>
                     </>
                 )}
 

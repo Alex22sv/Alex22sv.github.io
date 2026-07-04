@@ -7,7 +7,7 @@ export function HeroActions() {
     <div className="mt-10 flex flex-wrap gap-4">
       <AppButton asChild>
         <Link href="/projects">
-          Explore Projects
+          Explorar Proyectos
         </Link>
       </AppButton>
 
@@ -16,7 +16,7 @@ export function HeroActions() {
         asChild
       >
         <Link href="/journal">
-          Read Journal
+          Leer Diario
         </Link>
       </AppButton>
     </div>

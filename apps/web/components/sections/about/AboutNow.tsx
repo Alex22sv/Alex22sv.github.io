@@ -1,11 +1,11 @@
 import { Badge } from "@/components/ui/Badge";
 
 const current = [
-  "Building this website",
-  "Learning Next.js",
-  "Improving TypeScript",
-  "Reading software architecture books",
-  "Developing AURA VINDEX",
+  "Programando este sitio web",
+  "Aprendiendo Next.js",
+  "Mejorando TypeScript",
+  "Leyendo libros de arquitectura de software",
+  "Desarrollando AURA VINDEX",
 ];
 
 export function AboutNow() {
@@ -13,12 +13,12 @@ export function AboutNow() {
     <section className="py-16">
 
       <h2 className="text-3xl font-bold">
-        What I'm Working On
+        Actualmente
       </h2>
 
       <p className="mt-4 max-w-3xl text-muted-foreground">
-        These are the things I'm currently focused on.
-        This section will evolve over time.
+        Estas son las cosas en las que actualmente me enfoco.
+        Esta sección evolucionará con el tiempo.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">

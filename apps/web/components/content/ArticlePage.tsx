@@ -41,7 +41,7 @@ export function ArticlePage({
                 href="/journal"
                 className="mb-10 inline-flex text-sm text-primary hover:underline"
             >
-                ← Back to Journal
+                ← Volver al Diario
             </Link>
             <MDXRenderer
                 source={post.body ?? ""}

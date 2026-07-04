@@ -29,7 +29,7 @@ export default async function TagPage({
         <main className="mx-auto max-w-5xl px-6 py-20">
             <PageHeader
                 title={`#${tag}`}
-                description={`${posts.length} article(s) found.`}
+                description={`${posts.length} artículo(s) encontrado(s).`}
             />
 
             <div className="mt-10 space-y-6">

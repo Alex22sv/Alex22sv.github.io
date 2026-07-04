@@ -24,7 +24,7 @@ export function ProjectLinks({
           className="inline-flex items-center gap-2 rounded-lg border px-4 py-2 hover:border-primary"
         >
           <FolderGit2 size={18} />
-          Repository
+          Repositorio
         </a>
       )}
 
@@ -36,7 +36,7 @@ export function ProjectLinks({
           className="inline-flex items-center gap-2 rounded-lg border px-4 py-2 hover:border-primary"
         >
           <Globe size={18} />
-          Website
+          Sitio web
         </a>
       )}
 

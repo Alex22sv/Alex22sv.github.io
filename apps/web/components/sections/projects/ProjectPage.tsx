@@ -3,7 +3,7 @@ import { getRelatedContent } from "@/lib/content/related";
 import { ContentItem } from "@/lib/content/types";
 import Link from "next/link";
 
-import { ProjectLayout } from "@/components/projects/ProjectLayout";
+import { ProjectLayout } from "@/components/sections/projects/ProjectLayout";
 import { MDXRenderer } from "@/components/mdx/MDXRenderer";
 import { PreviousNext } from "@/components/content/PreviousNext";
 import { RelatedArticles } from "@/components/content/RelatedArticles";
@@ -40,8 +40,8 @@ export function ProjectPage({
             tags={project.tags}
             cover={project.cover}
             toc={
-                <TableOfContents 
-                    items={toc} 
+                <TableOfContents
+                    items={toc}
                 />
             }
         >
@@ -49,7 +49,7 @@ export function ProjectPage({
                 href="/projects"
                 className="mb-10 inline-flex text-sm text-primary hover:underline"
             >
-                ← Back to Projects
+                ← Volver a Proyectos
             </Link>
 
             <ProjectLinks

@@ -16,8 +16,8 @@ export function RecentlyAdded({
     <Container>
       <div style={{ marginTop: "3rem" }}>
         <SectionHeading
-          title="Recently Added"
-          description="The latest additions to my digital library."
+          title="Agregado recientemente"
+          description="Las últimas adiciones a mi biblioteca digital."
         />
 
         <ContentGrid items={items} />

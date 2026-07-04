@@ -45,7 +45,7 @@ export function ProjectCard({ project }: Props) {
       )}
 
       <div className="mt-8 inline-flex items-center gap-2 text-primary">
-        View Project
+        Ver proyecto
 
         <ArrowRight
           size={18}

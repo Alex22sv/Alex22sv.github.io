@@ -6,12 +6,12 @@ export function AboutContact() {
     <section className="py-20">
 
       <h2 className="text-3xl font-bold">
-        Contact
+        Contacto
       </h2>
 
       <p className="mt-4 max-w-2xl text-muted-foreground">
-        If you'd like to collaborate, discuss ideas or simply
-        say hello, feel free to reach out.
+        Si quieres colaborar, discutir ideas o simplemente
+        decir hola, no dudes en contactarme.
       </p>
 
       <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -28,7 +28,7 @@ export function AboutContact() {
           </h3>
 
           <p className="mt-2 text-sm text-muted-foreground">
-            Open-source projects and experiments.
+            Proyectos de código abierto y experimentos.
           </p>
 
         </Link>
@@ -40,11 +40,11 @@ export function AboutContact() {
           <Mail className="mb-4" />
 
           <h3 className="font-semibold">
-            Email
+            Correo Electrónico
           </h3>
 
           <p className="mt-2 text-sm text-muted-foreground">
-            Let's talk.
+            Hablemos.
           </p>
 
         </Link>
@@ -60,7 +60,7 @@ export function AboutContact() {
           </h3>
 
           <p className="mt-2 text-sm text-muted-foreground">
-            Coming soon.
+            Muy pronto.
           </p>
 
         </Link>

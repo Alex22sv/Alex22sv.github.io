@@ -1,11 +1,11 @@
-import { AboutHero } from "@/components/about/AboutHero";
-import { AboutStory } from "@/components/about/AboutStory";
-import { AboutPhilosophy } from "@/components/about/AboutPhilosophy";
-import { AboutTechnologies } from "@/components/about/AboutTechnologies";
-import { AboutTimeline } from "@/components/about/AboutTimeline";
-import { AboutWebsite } from "@/components/about/AboutWebsite";
-import { AboutNow } from "@/components/about/AboutNow";
-import { AboutContact } from "@/components/about/AboutContact";
+import { AboutHero } from "@/components/sections/about/AboutHero";
+import { AboutStory } from "@/components/sections/about/AboutStory";
+import { AboutPhilosophy } from "@/components/sections/about/AboutPhilosophy";
+import { AboutTechnologies } from "@/components/sections/about/AboutTechnologies";
+import { AboutTimeline } from "@/components/sections/about/AboutTimeline";
+import { AboutWebsite } from "@/components/sections/about/AboutWebsite";
+import { AboutNow } from "@/components/sections/about/AboutNow";
+import { AboutContact } from "@/components/sections/about/AboutContact";
 
 export default function AboutPage() {
   return (

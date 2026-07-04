@@ -8,8 +8,8 @@ export default function TagsPage() {
     return (
         <main className="mx-auto max-w-5xl px-6 py-20">
             <PageHeader
-                title="Tags"
-                description="Browse the library by topic."
+                title="Etiquetas"
+                description="Explora los temas de mi biblioteca."
             />
 
             <div className="flex flex-wrap gap-3">

@@ -39,15 +39,15 @@ export function Hero({
               md:text-7xl">
 
             <span className="block">
-            Building software,
+            Construyendo software,
             </span>
 
             <span className="block text-primary">
-            sharing knowledge,
+            compartiendo,
             </span>
 
             <span className="block">
-            and learning every day.
+            y aprendiendo todos los días.
             </span>
 
             </h1>

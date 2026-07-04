@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Alex22sv",
   author: "Alexander Morales",
   title: "Alex22sv",
-  description: "A personal digital library where I document projects, ideas, experiments and continuous learning.",
+  description: "Una biblioteca digital personal donde documento proyectos, ideas, experimentos y aprendizaje continuo.",
   url: "http://localhost:3000",
   locale: "en",
   github: "https://github.com/Alex22sv",
@@ -11,16 +11,17 @@ export const siteConfig = {
   copyright: `© ${new Date().getFullYear()} Alexander Morales.`,
   navigation: [
     {
-      title: "Home",
+      title: "Inicio",
       href: "/",
     },
     {
-      title: "Library",
+      title: "Biblioteca",
       href: "/library",
     },
     {
-      title: "Tags",
+      title: "Etiquetas",
       href: "/tags",
     }
   ],
 };
+

@@ -13,19 +13,19 @@ export function HeroStats({
 }: HeroStatsProps) {
   const stats = [
     {
-      label: "Projects",
+      label: "Proyectos",
       value: projects,
     },
     {
-      label: "Articles",
+      label: "Artículos",
       value: articles,
     },
     {
-      label: "Technologies",
+      label: "Tecnologías",
       value: technologies,
     },
     {
-      label: "Experiments",
+      label: "Experimentos",
       value: experiments,
     },
   ];

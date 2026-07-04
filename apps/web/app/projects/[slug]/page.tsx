@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getContent } from "@/lib/content/loader";
-import { ProjectPage } from "@/components/projects/ProjectPage";
+import { ProjectPage } from "@/components/sections/projects/ProjectPage";
 
 type Props = {
     params: Promise<{

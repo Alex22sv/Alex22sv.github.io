@@ -15,14 +15,14 @@ export function ProjectInfo({
     <section className="mb-12 rounded-xl border p-6">
 
       <h2 className="mb-4 text-xl font-semibold">
-        Project Information
+        Información del Proyecto
       </h2>
 
       <div className="space-y-4">
 
         {status && (
           <div>
-            <strong>Status:</strong> {status}
+            <strong>Estado:</strong> {status}
           </div>
         )}
 

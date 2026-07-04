@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { collections } from "@/constants/collections";
+import { collections } from "@/config/collections";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -7,8 +7,8 @@ export function Collections() {
   return (
     <Container>
       <SectionHeading
-        title="Explore the Library"
-        description="Browse the main collections of my digital library."
+        title="Explora la Biblioteca"
+        description="Navega por las principales colecciones de mi biblioteca digital."
       />
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4" style={{ marginTop: "2rem", marginBottom: "2rem" }}>

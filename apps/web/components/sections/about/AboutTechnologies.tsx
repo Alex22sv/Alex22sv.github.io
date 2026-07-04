@@ -20,12 +20,12 @@ export function AboutTechnologies() {
     <section className="py-16">
 
       <h2 className="text-3xl font-bold">
-        Technologies I Enjoy
+        Tecnologías que disfruto
       </h2>
 
       <p className="mt-4 max-w-3xl text-muted-foreground">
-        These are some of the technologies I currently enjoy working with.
-        The list changes over time as I continue learning.
+        Estas son algunas de las tecnologías con las que disfruto trabajando actualmente.
+        La lista cambia con el tiempo a medida que continúo aprendiendo.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">

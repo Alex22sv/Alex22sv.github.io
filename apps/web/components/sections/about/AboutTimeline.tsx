@@ -3,19 +3,19 @@ const timeline = [
     year: "2024",
     title: "AURA VINDEX",
     description:
-      "Started building a digital library ecosystem with Android, Kotlin and MongoDB.",
+      "Empecé a construir un ecosistema de biblioteca digital con Android, Kotlin y MongoDB.",
   },
   {
     year: "2025",
     title: "SPARK",
     description:
-      "Built an embedded pulse oximeter using ESP32 and MAX30102.",
+      "Construí un oxímetro de pulso embebido usando ESP32 y MAX30102.",
   },
   {
     year: "2026",
     title: "Personal Digital Library",
     description:
-      "Started creating this website as my personal digital home.",
+      "Empecé a construir una biblioteca digital personal.",
   },
 ];
 
@@ -24,7 +24,7 @@ export function AboutTimeline() {
     <section className="py-16">
 
       <h2 className="text-3xl font-bold">
-        Current Journey
+        Línea de tiempo
       </h2>
 
       <div className="mt-10 space-y-8">

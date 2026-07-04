@@ -10,7 +10,7 @@ export function ContentBadge({ collection }: Props) {
       return (
         <span className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-500">
           <NotebookPen size={14} />
-          Journal
+          Diario
         </span>
       );
 
@@ -18,7 +18,7 @@ export function ContentBadge({ collection }: Props) {
       return (
         <span className="inline-flex items-center gap-2 rounded-full bg-green-500/10 px-3 py-1 text-sm text-green-500">
           <FolderGit2 size={14} />
-          Project
+          Proyecto
         </span>
       );
 
@@ -26,7 +26,7 @@ export function ContentBadge({ collection }: Props) {
       return (
         <span className="inline-flex items-center gap-2 rounded-full bg-purple-500/10 px-3 py-1 text-sm text-purple-500">
           <BookOpen size={14} />
-          Library
+          Biblioteca
         </span>
       );
 

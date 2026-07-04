@@ -6,19 +6,19 @@ export function AboutHero() {
     <section className="py-20">
 
       <p className="text-primary font-medium">
-        About
+        Acerca de mí
       </p>
 
       <h1 className="mt-4 max-w-4xl text-5xl font-bold tracking-tight md:text-6xl">
-        Here is someone passionate about
-        learning, building and documenting.
+        Aquí está alguien apasionado por
+        aprender, construir y documentar.
       </h1>
 
       <p className="mt-8 max-w-3xl text-lg text-muted-foreground leading-8">
-        Hi, I'm Alex.
-        I'm a software developer who enjoys
-        creating software, experimenting with technology
-        and documenting everything I learn.
+        Hola, soy Alex.
+        Soy un desarrollador de software que disfruta
+        creando software, experimentando con tecnología
+        y documentando todo lo que aprendo.
       </p>
 
       <div className="mt-10 flex gap-4">
@@ -27,7 +27,7 @@ export function AboutHero() {
           href="/projects"
           className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-primary-foreground transition hover:opacity-90"
         >
-          View Projects
+          Ver Proyectos
 
           <ArrowRight size={18} />
 
@@ -37,7 +37,7 @@ export function AboutHero() {
           href="/journal"
           className="rounded-lg border px-5 py-3 transition hover:bg-accent"
         >
-          Read Journal
+          Leer Diario
         </Link>
 
       </div>

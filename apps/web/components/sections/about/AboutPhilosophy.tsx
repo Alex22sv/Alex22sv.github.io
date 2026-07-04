@@ -1,23 +1,23 @@
 const principles = [
   {
-    title: "Always Learning",
+    title: "Aprendizaje continuo",
     description:
-      "Technology evolves every day, and I enjoy continuously learning new tools, languages and ideas.",
+      "La tecnología evoluciona todos los días, y disfruto aprendiendo continuamente nuevas herramientas, lenguajes e ideas.",
   },
   {
-    title: "Build to Understand",
+    title: "Construir para aprender",
     description:
-      "I believe the best way to learn is by building real projects instead of only reading about them.",
+      "Creo que la mejor forma de aprender es construyendo proyectos reales en lugar de solo leer sobre ellos."
   },
   {
-    title: "Documentation Matters",
+    title: "Documentación Importante",
     description:
-      "Writing about what I build helps me improve, remember decisions and share knowledge with others.",
+      "Escribir sobre lo que construyo me ayuda a mejorar, recordar decisiones y compartir conocimiento con otros.",
   },
   {
-    title: "Keep It Simple",
+    title: "Manténlo Simple",
     description:
-      "Simple, maintainable solutions usually outlive complex ones.",
+      "Soluciones simples y mantenibles suelen superar a las complejas.",
   },
 ];
 
@@ -25,7 +25,7 @@ export function AboutPhilosophy() {
   return (
     <section className="py-16">
       <h2 className="text-3xl font-bold">
-        What I Believe
+        En lo que creo
       </h2>
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4 ">
         {principles.map((item) => (

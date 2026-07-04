@@ -14,8 +14,8 @@ export default function JournalPage() {
     <main className="mx-auto max-w-5xl px-6 py-20">
 
       <PageHeader
-        title="Journal"
-        description="Articles, tutorials and reflections about software, technology and learning."
+        title="Diario"
+        description="Artículos, tutoriales y reflexiones sobre software, tecnología y aprendizaje."
       />
 
       <div className="mt-10 space-y-6">

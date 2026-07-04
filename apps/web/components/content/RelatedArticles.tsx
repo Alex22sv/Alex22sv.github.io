@@ -19,7 +19,7 @@ export function RelatedArticles({
     <section className="mt-20">
 
       <h2 className="mb-6 text-2xl font-bold">
-        Related Articles
+        Artículos Relacionados
       </h2>
 
       <div className="space-y-6">

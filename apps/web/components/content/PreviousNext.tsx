@@ -20,7 +20,7 @@ export function PreviousNext({
           className="rounded-xl border p-6 transition hover:border-primary"
         >
           <p className="text-sm text-muted-foreground">
-            ← Previous
+            ← Anterior
           </p>
 
           <h3 className="mt-2 font-semibold">
@@ -37,7 +37,7 @@ export function PreviousNext({
           className="rounded-xl border p-6 text-right transition hover:border-primary"
         >
           <p className="text-sm text-muted-foreground">
-            Next →
+            Siguiente →
           </p>
 
           <h3 className="mt-2 font-semibold">

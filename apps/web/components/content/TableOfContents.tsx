@@ -14,7 +14,7 @@ export function TableOfContents({
   return (
     <aside className="rounded-2xl border p-6">
       <h2 className="mb-4 font-semibold">
-        On this page
+        En esta página
       </h2>
 
       <nav>
