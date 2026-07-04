@@ -26,7 +26,7 @@ export function ProjectLayout({
     toc,
 }: Props) {
     return (
-        <main className="mx-auto max-w-3xl px-6 py-20">
+        <main className="mx-auto max-w-5xl px-6 py-20">
             <div className="mt-4 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
 
                 <span>{date}</span>
@@ -73,18 +73,23 @@ export function ProjectLayout({
                     <Tag key={tag} tag={tag} />
                 ))}
             </div>
+            
+            {toc && (
+                <div className="grid gap-8 lg:grid-cols-[1fr_280px]">
+                    <article>
+                        {children}
+                    </article>
 
-            <div className="grid gap-12 lg:grid-cols-[1fr_280px]">
-                <article>
-                    {children}
-                </article>
-
-                {toc && (
                     <aside className="hidden lg:block">
                         {toc}
                     </aside>
-                )}
-            </div>
+                </div>
+            )}
+            {!toc && (
+                <article>
+                    {children}
+                </article>
+            )}
         </main>
         
     );

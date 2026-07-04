@@ -1,25 +1,56 @@
 ---
-title: "AURA VINDEX"
+title: "AURA VINDEX (API)"
 
-description: "Administrador de bibliotecas digital."
+description: "Backend para el sitio web y aplicación móvil AURA VINDEX."
 
-date: "2025-01-01"
+date: "2025-07-03"
 
-status: "En progreso"
+updated: ""
+
+author: "Alexander Morales"
+
+readingTime: "8 min"
+
+tags:
+  - api
+  - backend
+  - javascript
+  - docker
+  - auravindex
+
+cover: ""
 
 featured: true
 
-tags:
-  - android
-  - kotlin
+draft: false
+
+status: "Terminado"
+
+repository: "https://github.com/ELEKTROCODX/AURAVINDEXAPI"
+
+website: ""
 
 tech:
-  - Kotlin
-  - Android
-  - MongoDB
+  - JavaScript
   - Docker
+  - Express
+  - Mongoose
 ---
 
-## Overview
+## Resumen
 
-AURA VINDEX es un ecosistema completo digital.
+AURA VINDEX es una aplicación móvil diseñada para agilizar la gestión bibliotecaria. Ofrece herramientas para que las bibliotecas gestionen de manera eficiente:
+
+1. Libros: Catalogue y gestione el inventario de libros.
+2. Préstamo de libros: Simplifique el proceso de préstamo y devolución de libros.
+3. Suscripciones: La aplicación móvil requiere un plan de suscripción para su uso.
+
+## Nuestra API
+
+La API se encarga principalmente de:
+
+- Gestión de la autenticación de usuarios y de la autorización basada en roles.
+- Provisión de endpoints RESTful para libros, suscripciones y préstamos de libros.
+- Implementación de funcionalidades CRUD para los recursos de la biblioteca.
+- Interacción con la base de datos para almacenar y recuperar información de manera eficiente.
+- El backend está desarrollado con Node.js y Express, utilizando MongoDB como base de datos. Está totalmente contenedorizado con Docker para facilitar el - despliegue, garantizando así la escalabilidad y un mantenimiento sencillo.

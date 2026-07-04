@@ -26,7 +26,7 @@ export function ArticleLayout({
     toc,
 }: Props) {
     return (
-        <main className="mx-auto max-w-3xl px-6 py-20">
+        <main className="mx-auto max-w-5xl px-6 py-20">
             <div className="mt-4 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
 
                 <span>{date}</span>
@@ -34,7 +34,7 @@ export function ArticleLayout({
                 {updated && (
                     <>
                         <span>•</span>
-                        <span>Updated {updated}</span>
+                        <span>Actualizado {updated}</span>
                     </>
                 )}
 
