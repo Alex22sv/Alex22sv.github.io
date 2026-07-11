@@ -16,7 +16,7 @@ export default function JournalPage() {
 
       <PageHeader
         title="Diario"
-        description="Artículos, tutoriales y reflexiones sobre software, tecnología y aprendizaje."
+        description="Artículos, tutoriales, reseñas y reflexiones sobre software, tecnología, libros y aprendizaje."
       />
 
       <div className="mt-10 space-y-6">
