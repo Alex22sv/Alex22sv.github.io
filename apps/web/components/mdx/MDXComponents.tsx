@@ -79,6 +79,13 @@ export function useMDXComponents(): MDXComponents {
         {...props}
       />
     ),
+
+    br: (props) => (
+      <br
+        className="my-4"
+        {...props}
+      />
+    ),
     
     Callout,
   };
