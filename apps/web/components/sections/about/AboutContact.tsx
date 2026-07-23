@@ -34,7 +34,7 @@ export function AboutContact() {
         </Link>
 
         <Link
-          href="mailto:your@email.com"
+          href="mailto:ae22mp@gmail.com"
           className="rounded-xl border p-6 transition hover:border-primary"
         >
           <Mail className="mb-4" />
