@@ -6,10 +6,13 @@ export default function ProjectsPage() {
 
     // Fetch all projects from the content directory
     // Order by the "date" field in descending order
+    // Filter out projects marked as draft.
     const projects = getCollection("projects").sort((a, b) => {
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
         return dateB.getTime() - dateA.getTime();
+    }).filter((project) => {
+        return !project.draft;
     });
 
     return (

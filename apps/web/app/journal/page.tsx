@@ -3,11 +3,15 @@ import { ContentCard } from "@/components/content/ContentCard";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export default function JournalPage() {
-
+  // Fetch all posts from the content directory
+  // Order by the "date" field in descending order
+  // Filter out posts marked as draft.
   const posts = getCollection("journal").sort((a, b) => {
     const dateA = new Date(a.date);
     const dateB = new Date(b.date);
     return dateB.getTime() - dateA.getTime();
+  }).filter((post) => {
+    return !post.draft;
   });
 
   return (
